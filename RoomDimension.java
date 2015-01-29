@@ -13,6 +13,7 @@ public class RoomDimension {
     double length;
     double width;
     
+    public RoomDimension (double length, double width) { this.length = length; this.width = width; }
     public double getArea() { return this.length * this.width; }
     public String toString() { return Double.toString(this.length) + " x " + Double.toString(this.width); }
 }
