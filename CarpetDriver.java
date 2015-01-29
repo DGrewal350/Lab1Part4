@@ -20,7 +20,7 @@ public class CarpetDriver {
         Scanner in = new Scanner(System.in);
         double width, length;
         
-        System.out.print("Please enter the dimension of the room (length width)");
+        System.out.print("Please enter the dimension of the room (length width): ");
         length = in.nextDouble();
         width = in.nextDouble();
         
