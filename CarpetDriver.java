@@ -19,13 +19,17 @@ public class CarpetDriver {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         double width, length;
+        int type;
         
         System.out.print("Please enter the dimension of the room (length width): ");
         length = in.nextDouble();
         width = in.nextDouble();
+        System.out.print("Please enter the number associated with your carpetType (1-10): ");
+        type = in.nextInt();
         
         RoomDimension myRoom = new RoomDimension(length, width);
-        RoomCarpet carpet = new RoomCarpet(myRoom);
+        
+        RoomCarpet carpet = new RoomCarpet(myRoom, type);
         
         System.out.print("The total cost to carpet this room is: $" + carpet.getTotalCost());
         
